@@ -59,10 +59,14 @@ public class Cab {
 		int dp = Arrays.asList(distancePlace).indexOf(drop);
 		int count = 5;
 		for (int i = 0; i < distancePlace.length; i++) {
-			if (pk < dp) {
+			if (pk < dp ) {
 				count = count + 1;
 				pk++;
-			} else if (count == 5) {
+			} else if(pk > dp){
+				count++;
+				dp++;
+			}
+			else if (count == 5) {
 				count = 0;
 			}
 		}
@@ -97,7 +101,7 @@ public class Cab {
 	}
 
 	public void getDetails() {
-
+      
 	}
 
 }
