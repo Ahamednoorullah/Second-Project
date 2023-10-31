@@ -12,6 +12,14 @@ public class Cab {
 	int pricePer1km[] = { 10, 15, 30, 40 };
 	int distance;
 	Scanner sc = new Scanner(System.in);
+	
+	public boolean validation() {
+		if ((vahicle != null) && (pickup != null) && (drop != null) ) {
+			return true;
+		} else {
+            return false;
+		}
+	}
 
 	public void bookingCab() {
 		ArrayList<String> vahicleList = new ArrayList<String>();
@@ -24,7 +32,7 @@ public class Cab {
 		System.out.println("Cab Vahicle List = " + vahicleList);
 		System.out.println("Enter The Vahicle You Travelling in..?");
 		vahicle = sc.next();
-		if (vahicleList.contains(vahicle) || vahicle.equalsIgnoreCase(vahicle)) {
+		if (vahicleList.contains(vahicle)) {
 			System.out.println("These Places are Availabe in our CabService \n\t" + Arrays.toString(cabPlaces));
 			System.out.println("Enter Your Pickup Location..?");
 			pickup = sc.next();
