@@ -1,6 +1,6 @@
-package com.chainsys.practiseday5.methods;
+package com.chainsys.practiseday6.methods;
 
-public class practiseStringMethod1 {
+public class PractiseStringClassMethod {
 	public void compareStringMethod() {
 		String s1 = new String("Java");
 		String s2 = new String("Kava");
@@ -69,11 +69,11 @@ public class practiseStringMethod1 {
 	
 	}
 
-	public static void main(String[] args) {
-		practiseStringMethod1 prString = new practiseStringMethod1();
-		//prString.subString();
-		//prString.prStringMethod();
-		prString.compareStringMethod();
-			}
 
-} 
+	public static void main(String[] args) {
+		PractiseStringClassMethod pr = new PractiseStringClassMethod();
+		pr.compareStringMethod();
+
+	}
+
+}
