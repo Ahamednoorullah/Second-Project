@@ -1,9 +1,10 @@
 package com.chainsys.practiseday6.methods;
 
 public class PractiseStringClassMethod {
+	
 	public void compareStringMethod() {
 		String s1 = new String("Java");
-		String s2 = new String("Kava");
+		String s2 = new String("java");
 		
 	//	boolean result = s1.equals(s2);
 	//	boolean result = s1.equalsIgnoreCase(s2);
@@ -33,7 +34,7 @@ public class PractiseStringClassMethod {
 	}
 	public void prStringMethod() {
 		String str1 = "dbcgdfdhefheihfiehife";
-		String str2 = "Java";
+		String str2 = "Java  ";
 		String str3 = "Java";
 //		System.out.println(str1.compareToIgnoreCase(str2));
 //		System.out.println(str1.equalsIgnoreCase(str2));
@@ -47,13 +48,14 @@ public class PractiseStringClassMethod {
 //		System.out.println(str2.compareToIgnoreCase(str3));
 //		System.out.println(str2.contentEquals(str3));
 //		System.out.println(str2.equalsIgnoreCase(str3));
-//		System.out.println(str2.startsWith("a"));// prefix empty iruntha true return pannum illana false
+//		System.out.println(str2.startsWith("a"));//
 //	    System.out.println(str2.indexOf('a'));
 //	    System.out.println(str2.indexOf('d', 1));
 //	    System.out.println(str2.isEmpty());
 //		str2.toUpperCase();//print pannum pothu uppercase la varum..
 //		System.out.println(str2);
 //		System.out.println(str2.trim());
+	    
 	}
 	
 	
@@ -73,6 +75,8 @@ public class PractiseStringClassMethod {
 	public static void main(String[] args) {
 		PractiseStringClassMethod pr = new PractiseStringClassMethod();
 		pr.compareStringMethod();
+		//pr.subString();
+		//pr.prStringMethod();
 
 	}
 
