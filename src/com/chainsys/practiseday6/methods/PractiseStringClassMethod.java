@@ -2,7 +2,7 @@ package com.chainsys.practiseday6.methods;
 
 public class PractiseStringClassMethod {
 	
-	public void compareStringMethod() {
+	protected void compareStringMethod() {
 		String s1 = new String("Java");
 		String s2 = new String("java");
 		

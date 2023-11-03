@@ -64,7 +64,7 @@ public class Cab {
 		
 		ArrayList<String> distancePlace = new ArrayList<>();
 		Collections.addAll(distancePlace,"Vandalur", "Perungalathur", "Tambaram", "Chrompet", "Pallavaram", "Airport","Guindy", "Saidapet", "Egmore", "Central");
-		
+
 		int pickupIndex = distancePlace.indexOf(pickup);
 		int dropIndex = distancePlace.indexOf(drop);
 		int km = 5;
