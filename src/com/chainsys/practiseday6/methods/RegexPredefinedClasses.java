@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexPredefinedClasses {
+	//Predined Classes in Regex
 
 	public static void main(String[] args) {
 		String sentences = "TamilTamilan &TamilNadu 600045";
@@ -18,7 +19,7 @@ public class RegexPredefinedClasses {
 		//Pattern p = Pattern.compile("\\bTamil");//Tamil nu word oru boundry mundinji start aagutha
 		//Pattern p = Pattern.compile("\\BTamil");// Tamil word boundry mudiyama Tamil varutha
 		//Pattern p = Pattern.compile("\\GTamil");//Tamil word mudinji thirumba Tamil varutha
-		Pattern p = Pattern.compile(".");
+		Pattern p = Pattern.compile(".");//All character venum na 
 		Matcher m = p.matcher(sentences);
 		
 		while (m.find()) {

@@ -11,9 +11,9 @@ public class RegexLearningDemo3 {
 		
 		//Pattern p = Pattern.compile("[ab]");//Either a or b or c compile pannum
 		//Pattern p = Pattern.compile("[^ab]");// Except a and b 
-		//Pattern p = Pattern.compile("[a-zA-Z]");//All alphabets  
+		Pattern p = Pattern.compile("[a-zA-Z]");//All alphabets  
 		//Pattern p = Pattern.compile("[0-9]");//Number only 
-		Pattern p = Pattern.compile("[^a-zA-Z0-9]");//Except Alphanumaric print spl character
+		//Pattern p = Pattern.compile("[^a-zA-Z0-9]");//Except Alphanumaric print spl character
 		Matcher m = p.matcher(sentence);
 		
 		while (m.find()) {
