@@ -46,12 +46,18 @@ public class Bills {
 			itemTotal =itemQuantity*itemPrice;
 			subtotal +=itemTotal;
 			System.out.println(itemName+"\t$"+itemPrice+"\tQty :"+itemQuantity+"\tItemTotal :"+itemTotal);
-		}
+	
+	       }
+	       
+			
+		
 	       Bills bills = new Discount(subtotal,finaltotal);
-             bills.totalBill();
+           bills.totalBill();
+		}
+	      
 	     
 	}
-}
+
 class Discount extends Bills
 {
 	public Discount(double subtotal,double finaltotal) {
