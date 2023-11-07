@@ -1,14 +1,15 @@
-package com.chainsys.day9.encapsul;
+package com.chainsys.day9.supermarket;
 
 public class Product {  
      private String pname;  
      private int qty;  
      private double price;  
      private double totalPrice;
-     
      public Product() {
 		
 	}
+     
+    
      
     public Product(String pname,int qty,double price,double totalPrice) {
 		this.pname=pname;
@@ -21,6 +22,15 @@ public class Product {
     public int getQuantity() {return qty;}
     public double getPrice() {return price;}
     public double getTotalPrice() {return totalPrice;}
+    public void setProductName() {
+    	this.pname=pname;
+    }
+    public void setQuantity() {
+    	this.qty=qty;
+    }
+    public void setPrice() {
+    	this.price=price;
+    }
     
     
     public static void displayFormat() {
@@ -32,6 +42,6 @@ public class Product {
     
     public void display()   
     {  
-        System.out.format(" %-9s      %5d               %9.2f                       %14.2f\n" , pname, qty, price, totalPrice);  
+        System.out.format(" %-9s      %5d               %9.2f                       %14.2f\n" , pname, qty, price,totalPrice);  
     }  
 }

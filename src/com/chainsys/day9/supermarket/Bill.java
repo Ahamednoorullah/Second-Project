@@ -1,4 +1,4 @@
-package com.chainsys.day9.encapsul;
+package com.chainsys.day9.supermarket;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -6,10 +6,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class SuperMarkettingBilling {
+public class Bill extends Product{
 
-	public static void main(String[] args) {
-
+	public void billDisplay() {
 		String productName = null;
 		int quantity = 0;
 		double price = 0.0;
@@ -25,7 +24,6 @@ public class SuperMarkettingBilling {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
 		List<Product> product = new ArrayList<>();
-		Product p1 = new Product();
 
 		do {
 			System.out.println("Enter the Product Details..");
@@ -39,6 +37,9 @@ public class SuperMarkettingBilling {
 			totalPrice = quantity * price;
 			overAllPrice += totalPrice;
 			product.add(new Product(productName, quantity, price, totalPrice));
+			
+			
+			
 			System.out.println("\"Want to add more items? (y or n): \");");
 			choice = sc.next().charAt(0);
 		} while (choice == 'y' || choice == 'Y');
@@ -57,5 +58,4 @@ public class SuperMarkettingBilling {
 		System.out.println("\t\t\t\t\t\t\t\t\tTotal (Rs.)\t" + (subTotal + tax));
 
 	}
-
 }
